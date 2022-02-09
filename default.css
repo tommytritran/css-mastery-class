@@ -3,6 +3,7 @@
     padding:0;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:black;
+    box-sizing: border-box;
 }
 
 body {
@@ -11,19 +12,15 @@ body {
 }
 
 .container {
-    width: 500px;
-    height: 500px;
-    border:2px solid black;
-    position: relative;
-    margin: auto;
+    height: calc(100vh - 70px);
 }
 
 nav {
-    padding-top: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 12px;
+    height:70px;
+    border-bottom: 2px solid black;
 }
 
 nav ul {
