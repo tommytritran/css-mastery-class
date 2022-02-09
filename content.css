@@ -1,12 +1,21 @@
 .content-container-old {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    border: 2px solid green;
+    animation:spin 4s linear infinite;
+}
+
+.spinner-container {
     display: inline-block;
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%);
     height: 250px;
-     width: 250px;
-    border: 2px solid green;
+    width: 250px;
 }
 
 .flex-container {
@@ -19,8 +28,11 @@
 .content-container-flex {
     height: 250px;
     width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 2px solid green;
-    transform: rotate(45deg);
+    animation:spin 4s linear infinite;
 }
 
 .content {
@@ -29,12 +41,8 @@
     line-height: 100px;
     text-align: center;
     border: 2px solid black;
-    display: inline-block;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform:translate(-50%, -50%) rotate(-45deg) ;
+    animation:spin 4s linear infinite;
+    animation-direction: reverse;
 }
 
-
-
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
