@@ -5,7 +5,7 @@
     height: 250px;
     width: 250px;
     border: 2px solid green;
-    animation:spin 4s linear infinite;
+    animation:border 4s linear infinite;
 }
 
 .spinner-container {
@@ -32,7 +32,7 @@
     justify-content: center;
     align-items: center;
     border: 2px solid green;
-    animation:spin 4s linear infinite;
+    animation:border 4s linear infinite;
 }
 
 .content {
@@ -46,4 +46,11 @@
 }
 
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@keyframes border {
+    0% {border-radius:0}
+    25% {border-radius:100%}
+    50% {border-radius:0}
+    75% {border-radius:100%}
+    100% {-webkit-transform: rotate(360deg);transform:rotate(360deg);}
+}
 
