@@ -5,7 +5,6 @@
     height: 250px;
     width: 250px;
     border: 2px solid green;
-    animation:border 4s linear infinite;
 }
 
 .spinner-container {
@@ -32,7 +31,6 @@
     justify-content: center;
     align-items: center;
     border: 2px solid green;
-    animation:border 4s linear infinite;
 }
 
 .content {
@@ -41,8 +39,16 @@
     line-height: 100px;
     text-align: center;
     border: 2px solid black;
-    animation:spin 4s linear infinite;
-    animation-direction: reverse;
+}
+
+.animate-me {
+    border:2px solid red;
+    z-index: -999;
+    height: 500px;
+    width: 500px;
+    display: inline-block;
+    position: absolute;
+    animation:border 4s linear infinite;
 }
 
 @keyframes spin { 100% { transform:rotate(360deg); } }
